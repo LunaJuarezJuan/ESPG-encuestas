@@ -1,0 +1,43 @@
+se pide 
+--comando en raiz para desplegar todo con docker 
+  docker-compose up --build
+
+1. Sistema Web para Administrar Encuestas
+Frontend: Donde tú (o los administradores) crean y gestionan las encuestas.
+Backend: Donde se almacena la información de las encuestas, preguntas, respuestas y usuarios.
+2. Envío y Recepción de Encuestas por WhatsApp
+Como los usuarios son mayores y es más fácil para ellos usar WhatsApp, puedes automatizar el envío y recepción de encuestas usando un bot.
+Opciones para el Bot de WhatsApp:
+API Oficial de WhatsApp Business
+Es la opción más robusta y estable, pero tiene costo y requiere aprobación de Meta.
+Permite enviar mensajes automáticos y recibir respuestas.
+Librerías No Oficiales (como Baileys, open-wa/wa-automate, etc.)
+Son gratuitas y fáciles de implementar, pero pueden ser menos estables y WhatsApp puede bloquear el número si detecta uso indebido.
+Servicios de Terceros (Twilio, Zenvia, etc.)
+Proveen APIs fáciles de usar para WhatsApp, pero también tienen costo.
+Flujo Básico:
+El usuario administrador crea la encuesta en el sistema web.
+El sistema envía la encuesta (pregunta por pregunta) al WhatsApp del encuestado.
+El bot recibe las respuestas y las almacena en la base de datos.
+El administrador puede ver los resultados en el sistema web.
+¿Cómo empezar?
+1. Define la estructura de la encuesta
+¿Las preguntas son de opción múltiple, texto libre, escala, etc.?
+¿Cuántas preguntas tendrá cada encuesta?
+2. Elige la tecnología para el bot
+¿Prefieres una solución oficial (más segura, pero con costo) o una no oficial (más rápida y barata para prototipos)?
+3. Diseña el flujo de conversación
+¿Cómo se identificará a cada usuario?
+¿Cómo manejarás respuestas inválidas o dudas?
+4. Desarrolla el sistema web
+Puedes usar frameworks como Django, Flask (Python), Laravel (PHP), Node.js, etc.
+5. Integra el bot con el backend
+El bot debe poder consultar y actualizar la base de datos del sistema web.
+
+
+graph TD
+  A["Administrador (web)"] -- "Usa React" --> B["Frontend (React)"]
+  B -- "Solicita datos" --> C["Backend/API (Node.js, Python, etc.)"]
+  C -- "Guarda/lee encuestas" --> D["Base de datos"]
+  C -- "Envía/recibe mensajes" --> E["Bot de WhatsApp"]
+  E -- "Comunica por WhatsApp" --> F["Usuario final (WhatsApp)"]
