@@ -1,0 +1,45 @@
+Resumen de la estructura de la base de datos
+1. ciclos
+id: Identificador único del ciclo académico (ej: 1, 2, 3).
+nombre: Nombre del ciclo académico (ej: "2025-I").
+2. secciones
+id: Identificador único de la sección.
+nombre: Nombre de la sección (ej: "A", "B").
+ciclo_id: Relación con el ciclo académico al que pertenece la sección.
+3. docentes
+id: Identificador único del docente.
+nombre: Nombre completo del docente.
+celular: Número de celular del docente (opcional, para notificaciones).
+4. cursos
+id: Identificador único del curso.
+nombre: Nombre del curso o materia.
+docente_id: Relación con el docente que dicta el curso.
+seccion_id: Relación con la sección a la que pertenece el curso.
+5. estudiantes
+id: Identificador único del estudiante.
+nombre: Nombre completo del estudiante.
+celular: Número de celular del estudiante (para notificaciones o envío de encuestas).
+curso_id: Relación con el curso en el que está inscrito el estudiante.
+6. encuestas
+id: Identificador único de la encuesta.
+titulo: Título o nombre de la encuesta.
+curso_id: Relación con el curso al que está dirigida la encuesta.
+fecha_creacion: Fecha y hora en que se creó la encuesta.
+7. preguntas
+id: Identificador único de la pregunta.
+encuesta_id: Relación con la encuesta a la que pertenece la pregunta.
+texto: Texto de la pregunta.
+orden: Número de orden de la pregunta dentro de la encuesta.
+8. respuestas
+id: Identificador único de la respuesta.
+estudiante_id: Relación con el estudiante que responde.
+pregunta_id: Relación con la pregunta que se responde.
+respuesta_texto: Texto de la respuesta dada por el estudiante.
+fecha_respuesta: Fecha y hora en que se registró la respuesta.
+Resumen funcional (cómo se usa cada campo en el flujo del sistema)
+El administrador crea ciclos y secciones para organizar los periodos académicos y los grupos de estudiantes.
+Se registran docentes y cursos, asignando cada curso a un docente y una sección.
+Se inscriben estudiantes en los cursos correspondientes.
+Se crean encuestas asociadas a cursos específicos.
+Cada encuesta contiene preguntas que se ordenan mediante el campo orden.
+Los estudiantes responden las encuestas; cada respuesta queda registrada con el estudiante, la pregunta y el texto de la respuesta, junto con la fecha de respuesta.

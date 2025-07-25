@@ -1,0 +1,43 @@
+2025/07/25-12:44:21.927 1c7c Reusing MANIFEST C:\Users\POSTGRADO\Desktop\POST_sist\backend\tokens\post_encuesta_bot\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/07/25-12:44:21.927 1c7c Recovering log #36
+2025/07/25-12:44:21.980 1c7c Reusing old log C:\Users\POSTGRADO\Desktop\POST_sist\backend\tokens\post_encuesta_bot\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000036.log 
+2025/07/25-12:44:23.515 4628 Level-0 table #41: started
+2025/07/25-12:44:23.552 4628 Level-0 table #41: 787690 bytes OK
+2025/07/25-12:44:23.555 4628 Delete type=0 #36
+2025/07/25-12:44:23.557 1c7c Manual compaction at level-0 from '\x00\x17\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x18\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/07/25-12:44:23.559 1c7c Level-0 table #43: started
+2025/07/25-12:44:23.563 1c7c Level-0 table #43: 442 bytes OK
+2025/07/25-12:44:23.564 1c7c Delete type=0 #40
+2025/07/25-12:44:23.565 1c7c Manual compaction at level-0 from '\x00\x18\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x19\x00\x00\x00' @ 0 : 0; will stop at '\x00\x18\x00\x00\x05' @ 89843 : 0
+2025/07/25-12:44:23.565 1c7c Compacting 1@0 + 1@1 files
+2025/07/25-12:44:23.616 1c7c Generated table #44@0: 18194 keys, 495947 bytes
+2025/07/25-12:44:23.616 1c7c Compacted 1@0 + 1@1 files => 495947 bytes
+2025/07/25-12:44:23.619 1c7c compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/07/25-12:44:23.619 1c7c Delete type=2 #43
+2025/07/25-12:44:23.620 1c7c Manual compaction at level-0 from '\x00\x18\x00\x00\x05' @ 89843 : 0 .. '\x00\x19\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/07/25-12:44:23.622 1c7c Level-0 table #46: started
+2025/07/25-12:44:23.626 1c7c Level-0 table #46: 248 bytes OK
+2025/07/25-12:44:23.627 1c7c Delete type=2 #41
+2025/07/25-12:44:23.627 1c7c Delete type=0 #42
+2025/07/25-12:44:23.628 1c7c Manual compaction at level-0 from '\x00\x19\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1a\x00\x00\x00' @ 0 : 0; will stop at '\x00\x19\x00\x00\x05' @ 89849 : 0
+2025/07/25-12:44:23.628 1c7c Compacting 1@0 + 1@1 files
+2025/07/25-12:44:23.661 1c7c Generated table #47@0: 18192 keys, 495845 bytes
+2025/07/25-12:44:23.661 1c7c Compacted 1@0 + 1@1 files => 495845 bytes
+2025/07/25-12:44:23.661 1c7c compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/07/25-12:44:23.662 1c7c Delete type=2 #46
+2025/07/25-12:44:23.662 1c7c Manual compaction at level-0 from '\x00\x19\x00\x00\x05' @ 89849 : 0 .. '\x00\x1a\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/07/25-12:44:25.942 2868 Compacting 1@1 + 1@2 files
+2025/07/25-12:44:26.006 2868 Generated table #48@1: 19793 keys, 832272 bytes
+2025/07/25-12:44:26.007 2868 Compacted 1@1 + 1@2 files => 832272 bytes
+2025/07/25-12:44:26.009 2868 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/07/25-12:44:26.009 2868 Delete type=2 #44
+2025/07/25-12:48:31.410 2868 Level-0 table #50: started
+2025/07/25-12:48:31.454 2868 Level-0 table #50: 1060081 bytes OK
+2025/07/25-12:48:31.457 2868 Delete type=2 #38
+2025/07/25-12:48:31.457 2868 Delete type=0 #45
+2025/07/25-12:48:31.457 2868 Delete type=2 #47
+2025/07/25-12:49:26.856 1c7c Compacting 1@1 + 1@2 files
+2025/07/25-12:49:26.914 1c7c Generated table #51@1: 25917 keys, 1087836 bytes
+2025/07/25-12:49:26.914 1c7c Compacted 1@1 + 1@2 files => 1087836 bytes
+2025/07/25-12:49:26.916 1c7c compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/07/25-12:49:26.917 1c7c Manual compaction at level-0 from '\x00\x1c\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1d\x00\x00\x00' @ 0 : 0; will stop at (end)
