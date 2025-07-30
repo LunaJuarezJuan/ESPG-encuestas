@@ -14,12 +14,16 @@ services:
       - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql
+      - ./encuesta.sql:/docker-entrypoint-initdb.d/01-schema.sql
+      - ./datos_ejemplo.sql:/docker-entrypoint-initdb.d/02-data.sql
 
   frontend:
     build: ./frontend
     ports:
       - "3000:80"
     restart: unless-stopped
+    depends_on:
+      - backend
 
   backend:
     build: ./backend
@@ -28,6 +32,8 @@ services:
     depends_on:
       - mysql
     restart: unless-stopped
+    environment:
+      - NODE_ENV=production
 
 volumes:
   mysql_data:
